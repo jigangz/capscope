@@ -29,11 +29,33 @@
 - PyQt6（GUI）
 - PyInstaller（打包）
 
+## CLI 使用
+
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 查询今天的市值
+python -m capscope
+
+# 查询指定日期
+python -m capscope --date 2024-01-15
+
+# 导出 CSV
+python -m capscope --date 2024-01-15 --out result.csv
+
+# 导出 JSON
+python -m capscope --date 2024-01-15 --out result.json --format json
+
+# 只看某个行业
+python -m capscope --sector Technology --top 50
+```
+
 ## 开发进度
 
 - [x] Batch 1: 数据契约定稿
 - [x] Batch 2: 股票池方案
-- [ ] Batch 3: 核心计算
+- [x] Batch 3: 核心计算
 - [ ] Batch 4: GUI
 - [ ] Batch 5: 打包发布
 
