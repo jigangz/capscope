@@ -32,7 +32,7 @@
 ## 开发进度
 
 - [x] Batch 1: 数据契约定稿
-- [ ] Batch 2: 股票池方案
+- [x] Batch 2: 股票池方案
 - [ ] Batch 3: 核心计算
 - [ ] Batch 4: GUI
 - [ ] Batch 5: 打包发布
