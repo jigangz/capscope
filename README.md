@@ -29,12 +29,21 @@
 - PyQt6（GUI）
 - PyInstaller（打包）
 
-## CLI 使用
+## 使用方式
+
+### GUI（推荐）
 
 ```bash
 # 安装依赖
 pip install -r requirements.txt
 
+# 启动 GUI
+python run_gui.py
+```
+
+### CLI
+
+```bash
 # 查询今天的市值
 python -m capscope
 
@@ -56,7 +65,7 @@ python -m capscope --sector Technology --top 50
 - [x] Batch 1: 数据契约定稿
 - [x] Batch 2: 股票池方案
 - [x] Batch 3: 核心计算
-- [ ] Batch 4: GUI
+- [x] Batch 4: GUI
 - [ ] Batch 5: 打包发布
 
 ## License
