@@ -1,9 +1,21 @@
 """股票池加载模块"""
 
 import json
+import sys
 from pathlib import Path
 
-DATA_DIR = Path(__file__).parent.parent / "data"
+
+def _get_data_dir() -> Path:
+    """获取数据目录（支持 PyInstaller 打包）"""
+    if getattr(sys, 'frozen', False):
+        # PyInstaller 打包后
+        return Path(sys._MEIPASS) / "data"
+    else:
+        # 开发环境
+        return Path(__file__).parent.parent / "data"
+
+
+DATA_DIR = _get_data_dir()
 
 
 def get_universe() -> list[str]:
